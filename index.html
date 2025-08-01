@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <header>
+        <h1>Shreya Verma</h1>
+        <p>Aspiring Web Developer</p>
+        <a href="resume.pdf" download class="resume-btn">download resume</a>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" data-aos="fade-up">
+        <h2>About me</h2>
+        <p>I am a passionate and self-motivated beginner in web-development, exploring HTML, CSS, JavaScript, and responsive design. I love turning ideas into functional and beautiful websites.       
+        </p>
+    </section>
+    <section id="skills" data-aos="zoom-in">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    
+    <section id="projects" data-aos="fade-left">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <img src="portfolio-preview.png" alt="screenshot of portfolio project" class="preview">
+            <video class="preview" width="400" height="300" autoplay loop muted playsinline"><source src="calculator-ui.mp4" type="video/mp4">
+                Your browser does not support the video tag. 
+            </video>
+            <br><br><br><br><br>
+            <h3 class="project-title">My Portfolio Website</h3>
+            <p>This website showcase my skills, projects, and journey as a web-developer.Built using HTML, CSS and responsive techniques.</p>
+            <br>
+        </div>
+
+        <div class="project-card">
+
+            <h3>To-Do-List App</h3>
+            <p>A basic JavaScript to-do-list app that lets users add and delete tasks.Stores data using local storage.</p>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="flip-up">
+        <h2>Contact me</h2>
+        <div class="Contact-info">
+            <p>&#x1F4E7; <strong>Email:</strong><a href="mailto: shvrm273@gmail.com">shvrm273@gmail.com</a></p>
+            <p>&#x1F4F1; <strong>Phone:</strong><a href="tel:70545 07251">+91 7054507251</a></p>
+            <p>&#x1F4BB; <strong>GitHub:</strong><a href="https://github.com/shreyaverma36" target="_blank">github.com/shreyaverma36</a></p>
+            <p>&#x1F517; <strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/shreya-verma-335065305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank">Linkedin.com/in/Shreyaverma</a></p>
+        </div>
+    
+    </section>
+    <br>
+    <footer>
+        <p>&copy; 2025 Shreya Verma. All rights reserved.</p>
+    </footer>
+
+    
+
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go To Top">&#8679;</button>
+    <br>
+    <button id="toggleDarkMode">🌙</button>
+
+    <script src="script.js" defer></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
